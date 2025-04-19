@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Float, Boolean, Integer, Enum
 from sqlalchemy.orm import relationship
-from core.orm.base import BaseModel
+from api.v1.orms.base import BaseModel
 from api.v1.models.enums import PropertyType
 
 class PropertyBase(BaseModel):

@@ -3,8 +3,8 @@ from uuid import UUID
 from datetime import date
 from sqlalchemy.orm import Session
 
-from core.repositories.base import BaseRepository
-from core.orm.accounts import Account, Subaccount, InterestRate
+from api.v1.repositories.base import BaseRepository
+from api.v1.orms.accounts import Account, Subaccount, InterestRate
 from api.v1.models.accounts.account import Account as AccountSchema
 from api.v1.models.accounts.subaccount import Subaccount as SubaccountSchema
 from api.v1.models.accounts.interest_rate import InterestRate as InterestRateSchema

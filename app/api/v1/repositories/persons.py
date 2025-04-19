@@ -2,8 +2,8 @@ from typing import List, Optional
 from uuid import UUID
 from sqlalchemy.orm import Session
 
-from core.repositories.base import BaseRepository
-from core.orm.persons import Person
+from api.v1.repositories.base import BaseRepository
+from api.v1.orms.persons import Person
 from api.v1.models.persons.person import Person as PersonSchema
 from api.v1.models.enums import PersonType
 

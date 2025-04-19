@@ -3,8 +3,8 @@ from uuid import UUID
 from datetime import date
 from sqlalchemy.orm import Session
 
-from core.repositories.base import BaseRepository
-from core.orm.deposits import Deposit
+from api.v1.repositories.base import BaseRepository
+from api.v1.orms.deposits import Deposit
 from api.v1.models.deposits.deposit import Deposit as DepositSchema
 
 class DepositRepository(BaseRepository[Deposit, DepositSchema, DepositSchema]):

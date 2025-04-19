@@ -3,8 +3,8 @@ from uuid import UUID
 from datetime import date
 from sqlalchemy.orm import Session
 
-from core.repositories.base import BaseRepository
-from core.orm.contracts import Contract
+from api.v1.repositories.base import BaseRepository
+from api.v1.orms.contracts import Contract
 from api.v1.models.contracts.contract import Contract as ContractSchema
 from api.v1.models.enums import ContractStatus
 

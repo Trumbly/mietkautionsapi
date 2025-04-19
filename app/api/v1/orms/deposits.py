@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Date, Numeric, String, ForeignKey
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
-from core.orm.base import BaseModel
+from api.v1.orms.base import BaseModel
 
 class Deposit(BaseModel):
     __tablename__ = "deposits"

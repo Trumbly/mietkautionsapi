@@ -1,7 +1,7 @@
 from sqlalchemy import Column, String, Numeric, Date, ForeignKey
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
-from core.orm.base import BaseModel
+from api.v1.orms.base import BaseModel
 
 class Account(BaseModel):
     __tablename__ = "accounts"

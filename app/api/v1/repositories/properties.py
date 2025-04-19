@@ -2,8 +2,8 @@ from typing import List, Optional
 from uuid import UUID
 from sqlalchemy.orm import Session
 
-from core.repositories.base import BaseRepository
-from core.orm.properties import Garage, Apartment, House
+from api.v1.repositories.base import BaseRepository
+from api.v1.orms.properties import Garage, Apartment, House
 from api.v1.models.properties.garage import Garage as GarageSchema
 from api.v1.models.properties.apartment import Apartment as ApartmentSchema
 from api.v1.models.properties.house import House as HouseSchema

@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Date, Enum
 from sqlalchemy.orm import relationship
-from core.orm.base import BaseModel
+from api.v1.orms.base import BaseModel
 from api.v1.models.enums import PersonType
 
 class Person(BaseModel):

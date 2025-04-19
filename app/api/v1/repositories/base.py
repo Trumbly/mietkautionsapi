@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import select, update, delete
 from pydantic import BaseModel
 
-from core.orm.base import BaseModel as ORMBaseModel
+from api.v1.orms.base import BaseModel as ORMBaseModel
 
 ModelType = TypeVar("ModelType", bound=ORMBaseModel)
 CreateSchemaType = TypeVar("CreateSchemaType", bound=BaseModel)
