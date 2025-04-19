@@ -1,5 +1,5 @@
 from pydantic import Field
-from app.api.v1.models.base import BaseModelWithUUID
+from api.v1.models.base import BaseModelWithUUID
 
 class PropertyBase(BaseModelWithUUID):
     address: str = Field(..., description="Adresse")

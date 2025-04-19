@@ -1,7 +1,7 @@
 from datetime import date
 from pydantic import Field, EmailStr
-from app.api.v1.models.enums import PersonType
-from app.api.v1.models.base import BaseModelWithUUID
+from api.v1.models.enums import PersonType
+from api.v1.models.base import BaseModelWithUUID
 
 class Person(BaseModelWithUUID):
     first_name: str = Field(..., description="Vorname")

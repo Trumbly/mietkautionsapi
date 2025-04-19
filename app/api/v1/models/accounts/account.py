@@ -2,10 +2,10 @@ from decimal import Decimal
 from typing import List
 from uuid import UUID
 from pydantic import Field
-from app.api.v1.models.accounts.subaccount import Subaccount
-from app.api.v1.models.base import BaseModelWithUUID
+from api.v1.models.accounts.subaccount import Subaccount
+from api.v1.models.base import BaseModelWithUUID
 from datetime import datetime
-from app.api.v1.models.accounts.interest_rate import InterestRate
+from api.v1.models.accounts.interest_rate import InterestRate
 class Account(BaseModelWithUUID):
     bank_name: str = Field(..., description="Bankname")
     iban: str = Field(..., description="IBAN")

@@ -1,5 +1,5 @@
-from app.api.v1.models.properties.base import PropertyBase
-from app.api.v1.models.enums import PropertyType
+from api.v1.models.properties.base import PropertyBase
+from api.v1.models.enums import PropertyType
 from pydantic import Field
 
 class Garage(PropertyBase):

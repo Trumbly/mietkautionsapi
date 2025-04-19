@@ -3,8 +3,8 @@ from datetime import date
 from decimal import Decimal
 from typing import Optional
 from pydantic import Field
-from app.api.v1.models.enums import ContractStatus
-from app.api.v1.models.base import BaseModelWithUUID
+from api.v1.models.enums import ContractStatus
+from api.v1.models.base import BaseModelWithUUID
 
 class Contract(BaseModelWithUUID):
     property_id: UUID = Field(..., description="Mietobjekt ID")

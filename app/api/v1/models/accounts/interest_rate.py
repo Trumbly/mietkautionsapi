@@ -3,7 +3,7 @@ from decimal import Decimal
 from typing import Optional
 from uuid import UUID
 from pydantic import Field
-from app.api.v1.models.base import BaseModelWithUUID
+from api.v1.models.base import BaseModelWithUUID
 
 class InterestRate(BaseModelWithUUID):
     account_id: UUID = Field(..., description="Konto ID")

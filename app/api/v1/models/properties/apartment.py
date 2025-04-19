@@ -1,4 +1,4 @@
-from app.api.v1.models.properties.base import PropertyBase
+from api.v1.models.properties.base import PropertyBase
 from pydantic import Field
 
 class Apartment(PropertyBase):
